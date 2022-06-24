@@ -35,60 +35,60 @@ const {
   esVocal,
 } = require('../tareas.js');
 
-describe('🔷Ejercicios Esenciales🔷', function() {
+describe('🔷Ejercicios Esenciales🔷', function () {
 
-  describe('nuevaString', function() {
-    it('Deberia ser un string', function() {
+  describe('nuevaString', function () {
+    it('Deberia ser un string', function () {
       expect(typeof nuevaString).toBe('string');
     });
   });
 
-  describe('nuevoNum', function() {
-    it('Deberia ser un numero', function() {
+  describe('nuevoNum', function () {
+    it('Deberia ser un numero', function () {
       expect(typeof nuevoNum).toBe('number');
     });
   });
 
-  describe('nuevoBool', function() {
-    it('Deberia ser un booleano', function() {
+  describe('nuevoBool', function () {
+    it('Deberia ser un booleano', function () {
       expect(typeof nuevoBool).toBe('boolean');
     });
   });
 
-  describe('nuevaResta', function() {
-    it('Deberia devolver como true el resultado correcto', function() {
+  describe('nuevaResta', function () {
+    it('Deberia devolver como true el resultado correcto', function () {
       expect(nuevaResta).toBe(true);
     });
   });
 
-  describe('nuevaMultiplicacion', function() {
-    it('Deberia devolver como true el resultado correcto', function() {
+  describe('nuevaMultiplicacion', function () {
+    it('Deberia devolver como true el resultado correcto', function () {
       expect(nuevaMultiplicacion).toBe(true);
     });
   });
 
-  describe('nuevoModulo', function() {
-    it('Deberia devolver como true el resultado correcto', function() {
+  describe('nuevoModulo', function () {
+    it('Deberia devolver como true el resultado correcto', function () {
       expect(nuevoModulo).toBe(true);
     });
   });
 
-  describe('devolverString(str)', function() {
-    it('Deberia devolver el string provisto', function() {
+  describe('devolverString(str)', function () {
+    it('Deberia devolver el string provisto', function () {
       let string = 'Numen';
       expect(devolverString(string)).toBe(string);
     });
   });
 
-  describe('suma(x, y)', function() {
-    it('Deberia devolver la suma de los dos argumentos', function() {
+  describe('suma(x, y)', function () {
+    it('Deberia devolver la suma de los dos argumentos', function () {
       expect(suma(5, 5)).toBe(10);
       expect(suma(-1, 5)).toBe(4);
     });
   });
 
-  describe('resta(x, y)', function() {
-    it('Deberia devolver la diferencia de los dos argumentos', function() {
+  describe('resta(x, y)', function () {
+    it('Deberia devolver la diferencia de los dos argumentos', function () {
       expect(resta(5, 5)).toBe(0);
       expect(resta(-1, 5)).toBe(-6);
       expect(resta(5, -5)).toBe(10);
@@ -96,79 +96,79 @@ describe('🔷Ejercicios Esenciales🔷', function() {
     });
   });
 
-  describe('divide(x, y)', function() {
-    it('Deberia devolver la division de los dos argumentos', function() {
+  describe('divide(x, y)', function () {
+    it('Deberia devolver la division de los dos argumentos', function () {
       expect(divide(5, 5)).toBe(1);
       expect(divide(10, 5)).toBe(2);
       expect(divide(11, 2)).toBe(5.5);
     });
   });
 
-  describe('multiplica(x, y)', function() {
-    it('Deberia devolver el producto de los dos argumentos', function() {
+  describe('multiplica(x, y)', function () {
+    it('Deberia devolver el producto de los dos argumentos', function () {
       expect(multiplica(5, 5)).toBe(25);
       expect(multiplica(10, -5)).toBe(-50);
       expect(multiplica(11, 0)).toBe(0);
     });
   });
 
-  describe('sonIguales(x, y)', function() {
-    it('Deberia devolver true si los argumentos son iguales y sino false', function() {
+  describe('sonIguales(x, y)', function () {
+    it('Deberia devolver true si los argumentos son iguales y sino false', function () {
       expect(sonIguales(15, 15)).toBe(true);
       expect(sonIguales(90, 50)).toBe(false);
       expect(sonIguales('test', 'test')).toBe(true);
     });
   });
 
-  describe('tienenMismaLongitud(str1, str2)', function() {
-    it('Deberia devolver true si los strings tienen la misma longitud y sino false', function() {
+  describe('tienenMismaLongitud(str1, str2)', function () {
+    it('Deberia devolver true si los strings tienen la misma longitud y sino false', function () {
       expect(tienenMismaLongitud('hi', 'there')).toBe(false);
       expect(tienenMismaLongitud('javascript', 'bumfuzzled')).toBe(true);
     });
   });
 
-  describe('menosQueNoventa(num)', function() {
-    it('Deberia devolver true si el numero es menor a noventa sino false', function() {
+  describe('menosQueNoventa(num)', function () {
+    it('Deberia devolver true si el numero es menor a noventa sino false', function () {
       expect(menosQueNoventa(15)).toBe(true);
       expect(menosQueNoventa(90)).toBe(false);
       expect(menosQueNoventa(100)).toBe(false);
     });
   });
 
-  describe('mayorQueCincuenta(num)', function() {
-    it('Deberia devolver true si el numero es mayor a cincuenta sino false', function() {
+  describe('mayorQueCincuenta(num)', function () {
+    it('Deberia devolver true si el numero es mayor a cincuenta sino false', function () {
       expect(mayorQueCincuenta(15)).toBe(false);
       expect(mayorQueCincuenta(50)).toBe(false);
       expect(mayorQueCincuenta(60)).toBe(true);
     });
   });
 
-  describe('obtenerResto(x, y)', function() {
-    it('Deberia devolver el resto de dividir x sobre y', function() {
+  describe('obtenerResto(x, y)', function () {
+    it('Deberia devolver el resto de dividir x sobre y', function () {
       expect(obtenerResto(15, 5)).toBe(0);
       expect(obtenerResto(21, 5)).toBe(1);
       expect(obtenerResto(22, 5)).toBe(2);
     });
   });
 
-  describe('esPar(num)', function() {
-    it('Deberia devolver true si el numero es par sino false', function() {
+  describe('esPar(num)', function () {
+    it('Deberia devolver true si el numero es par sino false', function () {
       expect(esPar(6)).toBe(true);
       expect(esPar(7)).toBe(false);
       expect(esPar(0)).toBe(true);
     });
   });
 
-  describe('esImpar(num)', function() {
-    it('Deberia devolver true si el numero es impar sino false', function() {
+  describe('esImpar(num)', function () {
+    it('Deberia devolver true si el numero es impar sino false', function () {
       expect(esImpar(6)).toBe(false);
       expect(esImpar(7)).toBe(true);
       expect(esImpar(0)).toBe(false);
     });
   });
 
-  describe('elevarAlCuadrado(num)', function() {
-    it('Deberia devolver el numero elevado al cuadrado', function() {
+  describe('elevarAlCuadrado(num)', function () {
+    it('Deberia devolver el numero elevado al cuadrado', function () {
       expect(elevarAlCuadrado(6)).toBe(36);
       expect(elevarAlCuadrado(7)).toBe(49);
       expect(elevarAlCuadrado(0)).toBe(0);
@@ -176,16 +176,16 @@ describe('🔷Ejercicios Esenciales🔷', function() {
     });
   });
 
-  describe('elevarAlCubo(num)', function() {
-    it('Deberia devolver el numero elevado al cubo', function() {
+  describe('elevarAlCubo(num)', function () {
+    it('Deberia devolver el numero elevado al cubo', function () {
       expect(elevarAlCubo(3)).toBe(27);
       expect(elevarAlCubo(0)).toBe(0);
       expect(elevarAlCubo(-5)).toBe(-125);
     });
   });
 
-  describe('elevar(num, exponent)', function() {
-    it('Deberia devolver el numero elevado al exponente indicado', function() {
+  describe('elevar(num, exponent)', function () {
+    it('Deberia devolver el numero elevado al exponente indicado', function () {
       expect(elevar(2, 2)).toBe(4);
       expect(elevar(2, 3)).toBe(8);
       expect(elevar(0, 5)).toBe(0);
@@ -193,61 +193,61 @@ describe('🔷Ejercicios Esenciales🔷', function() {
     });
   });
 
-  describe('redondearNumero(num)', function() {
-    it('Deberia devolver el numero redondeado', function() {
+  describe('redondearNumero(num)', function () {
+    it('Deberia devolver el numero redondeado', function () {
       expect(redondearNumero(1.5)).toBe(2);
       expect(redondearNumero(2)).toBe(2);
       expect(redondearNumero(0.1)).toBe(0);
     });
   });
 
-  describe('redondearHaciaArriba(num)', function() {
-    it('Deberia devolver el numero redondeado para arriba', function() {
+  describe('redondearHaciaArriba(num)', function () {
+    it('Deberia devolver el numero redondeado para arriba', function () {
       expect(redondearHaciaArriba(1.5)).toBe(2);
       expect(redondearHaciaArriba(2)).toBe(2);
       expect(redondearHaciaArriba(0.1)).toBe(1);
     });
   });
 
-  describe('numeroRandom()', function() {
-    it('Debería devolver un número entre 0 y 1', function() {
+  describe('numeroRandom()', function () {
+    it('Debería devolver un número entre 0 y 1', function () {
       expect(typeof numeroRandom()).toBe('number');
       expect(numeroRandom()).toBeGreaterThanOrEqual(0);
       expect(numeroRandom()).toBeLessThan(1);
     });
   });
 
-  describe('esPositivo(numero)', function() {
-    it('Debería devolver el string \Es positivo ó Es negativo\ según corresponda', function() {
+  describe('esPositivo(numero)', function () {
+    it('Debería devolver el string \Es positivo ó Es negativo\ según corresponda', function () {
       expect(esPositivo(0)).toBe(false);
       expect(esPositivo(23)).toBe('Es positivo');
       expect(esPositivo(-2)).toBe('Es negativo');
     });
   });
 
-  describe('agregarSimboloExclamacion(str)', function() {
-    it('Deberia agregar un signo de exclamacion al final del string', function() {
+  describe('agregarSimboloExclamacion(str)', function () {
+    it('Deberia agregar un signo de exclamacion al final del string', function () {
       expect(agregarSimboloExclamacion('hello world')).toBe('hello world!');
       expect(agregarSimboloExclamacion('Soy Numen')).toBe('Soy Numen!');
     });
   });
 
-  describe('combinarNombres(firstName, lastName)', function() {
-    it('Deberia devolver los strings combinados con un espacio en el medio', function() {
+  describe('combinarNombres(firstName, lastName)', function () {
+    it('Deberia devolver los strings combinados con un espacio en el medio', function () {
       expect(combinarNombres('hello', 'world')).toBe('hello world');
       expect(combinarNombres('Soy', 'Numen')).toBe('Soy Numen');
     });
   });
 
-  describe('obtenerSaludo(name)', function() {
-    it('Deberia devolver el string \'Hola {name}!\'', function() {
+  describe('obtenerSaludo(name)', function () {
+    it('Deberia devolver el string \'Hola {name}!\'', function () {
       expect(obtenerSaludo('Martin')).toBe('Hola Martin!');
       expect(obtenerSaludo('Fernando')).toBe('Hola Fernando!');
     });
   });
 
-  describe('deEuroAdolar(euro)', function() {
-    it('Deberia retornar el valor correcto de euro a dolar', function() {
+  describe('deEuroAdolar(euro)', function () {
+    it('Deberia retornar el valor correcto de euro a dolar', function () {
       expect(deEuroAdolar(100)).toBe(120);
       expect(deEuroAdolar(200)).toBe(240);
       expect(deEuroAdolar(50)).toBe(60);
@@ -256,37 +256,39 @@ describe('🔷Ejercicios Esenciales🔷', function() {
 
 });
 
-describe('🥇¡Puntos Extra!🥇', function() {
-  describe('obtenerAreaRectangulo(alto, ancho)', function() {
-    it('Deberia retornar el area correcta del rectangulo', function() {
+describe('🥇¡Puntos Extra!🥇', function () {
+  describe('obtenerAreaRectangulo(alto, ancho)', function () {
+    it('Deberia retornar el area correcta del rectangulo', function () {
       expect(obtenerAreaRectangulo(2, 2)).toBe(4);
       expect(obtenerAreaRectangulo(3, 6)).toBe(18);
       expect(obtenerAreaRectangulo(0, 2)).toBe(0);
     });
   });
 
-  describe('retornarPerimetro(lado)', function() {
-    it('Deberia retornar el perímetro correcto del cuadrado', function() {
+  describe('retornarPerimetro(lado)', function () {
+    it('Deberia retornar el perímetro correcto del cuadrado', function () {
       expect(retornarPerimetro(2)).toBe(8);
       expect(retornarPerimetro(8)).toBe(32);
       expect(retornarPerimetro(0)).toBe(0);
     });
   });
 
-  describe('areaDelTriangulo( base, altura)', function() {
-    it('Deberia retornar el area correcta del triángulo', function() {
+  describe('areaDelTriangulo( base, altura)', function () {
+    it('Deberia retornar el area correcta del triángulo', function () {
       expect(areaDelTriangulo(10, 5)).toBe(25);
       expect(areaDelTriangulo(20, 10)).toBe(100);
       expect(areaDelTriangulo(0, 10)).toBe(0);
     });
   });
 
-  describe('esVocal(letra)', function() {
-    it('Deberia devolver el strings "Dato incorrecto", si el valor ingresado tiene más de una letra', function() {
+  describe('esVocal(letra)', function () {
+    it('Deberia devolver el strings "Dato incorrecto", si el valor ingresado tiene más de una letra o es un numero', function () {
       expect(esVocal("la")).toBe("Dato incorrecto");
       expect(esVocal("pero")).toBe("Dato incorrecto");
+      expect(esVocal(14)).toBe("Dato incorrecto");
+
     });
-    it('Deberia devolver el strings "Es vocal", si el valor ingresado lo es', function() {
+    it('Deberia devolver el strings "Es vocal", si el valor ingresado lo es', function () {
       expect(esVocal('a')).toBe('Es vocal');
       expect(esVocal('e')).toBe('Es vocal');
       expect(esVocal('i')).toBe('Es vocal');
